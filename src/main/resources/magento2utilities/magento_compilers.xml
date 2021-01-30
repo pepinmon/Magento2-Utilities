@@ -1,0 +1,16 @@
+<!-- Definition for files recompilers. Usage in com.magento2utilities.packages.models.FileRecompiler -->
+<compilers>
+    <compiler fileExtension="png" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="jpg" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="jpeg" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="svg" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="gif" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="ttf" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="otf" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="eot" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="wof" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="html" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
+    <compiler fileExtension="js" instance="com.magento2utilities.packages.compilers.JsCompiler" />
+    <compiler fileExtension="css" instance="com.magento2utilities.packages.compilers.CssCompiler" />
+    <compiler fileExtension="less" instance="com.magento2utilities.packages.compilers.LessCompiler" />
+</compilers>

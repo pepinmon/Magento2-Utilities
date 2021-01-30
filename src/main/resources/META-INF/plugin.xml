@@ -1,0 +1,30 @@
+<idea-plugin>
+
+    <id>com.magento2utilities</id>
+    <name>Magento 2 - Utilities</name>
+    <vendor url="https://github.com/pepinmon">Pepinmon</vendor>
+    <version>1.0.0</version>
+    <description><![CDATA[
+    This is a PhpStorm IDE plugin for improving Magento 2 development workflow.]]>
+    </description>
+    <change-notes><![CDATA[
+    Please, find change notes
+    <a
+        href="https://github.com/pepinmon/magento2-utilities/blob/master/CHANGELOG.md"
+        title="CHANGELOG.md"
+    >here</a>]]>
+    </change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <group class="com.magento2utilities.groups.Magento2Utilities" id="MagentoUtilitiesFileActionGroup" text="Magento 2 Utilities" popup="true">
+            <action class="com.magento2utilities.actions.RecompileStaticFileAction" id="RecreateStatic" text="Recompile Currently Open File">
+                <keyboard-shortcut keymap="$default" first-keystroke="control alt R" />
+            </action>
+            <add-to-group group-id="ProjectViewPopupMenu"/>
+            <add-to-group group-id="EditorTabPopupMenu" anchor="last"/>
+        </group>
+    </actions>
+
+</idea-plugin>
