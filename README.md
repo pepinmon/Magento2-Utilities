@@ -8,6 +8,8 @@
 
 <!-- Plugin description -->
 This plugin provides utilities that improve the workflow when working with Magento 2 Projects in PHPStorm.
+
+[Documentation](https://github.com/pepinmon/Magento2-Utilities/blob/main/README.md).
 <!-- Plugin description end -->
 
 ## Works With

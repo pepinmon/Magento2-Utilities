@@ -5,7 +5,9 @@
     <vendor url="https://github.com/pepinmon">Pepinmon</vendor>
     <version>1.0.0</version>
     <description><![CDATA[
-    This is a PhpStorm IDE plugin for improving Magento 2 development workflow.]]>
+    This plugin provides utilities that improve the workflow when working with Magento 2 Projects in PHPStorm.
+    <br> <a href="https://github.com/pepinmon/Magento2-Utilities/blob/main/README.md"> Documentation </a>.
+    ]]>
     </description>
     <change-notes><![CDATA[
     Please, find change notes
