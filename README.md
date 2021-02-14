@@ -1,6 +1,6 @@
 # Magento2 PHPStorm Utilites
 
-![Build](https://github.com/pepinmon/Magento2-Utilities/workflows/Build/badge.svg)
+![Build](https://github.com/pepinmon/Magento2-Utilities/workflows/Release/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/15972.svg)](https://plugins.jetbrains.com/plugin/15972)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/15972.svg)](https://plugins.jetbrains.com/plugin/15972)
 
