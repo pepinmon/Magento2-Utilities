@@ -12,7 +12,7 @@ public class CssCompiler extends BaseStaticCompiler {
     /**
      * Compiler for css type files.
      * Less files are exception handled in
-     * com.magento2utilities.packages.models.FileRecompiler#getDefinedFiles(com.intellij.openapi.vfs.VirtualFile).
+     * com.magento2utilities.packages.models.StaticsRecompilation.FileRecompiler#getDefinedFiles(com.intellij.openapi.vfs.VirtualFile).
      * When less files are selected, the couterpart compiled css files are targeted for recompilation.
      *
      * @param file PsiFile

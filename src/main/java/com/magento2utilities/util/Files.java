@@ -147,4 +147,15 @@ public class Files {
     {
         return path.startsWith("/var/view_preprocessed");
     }
+
+    /**
+     * Checks if a given file path starts in the generated code Magento directory.
+     *
+     * @param path String
+     * @return boolean
+     */
+    public static boolean isFileFromGeneratedCode(String path)
+    {
+        return path.startsWith("/generated/code");
+    }
 }

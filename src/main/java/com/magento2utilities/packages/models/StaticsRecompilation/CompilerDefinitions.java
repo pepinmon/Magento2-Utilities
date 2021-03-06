@@ -1,4 +1,4 @@
-package com.magento2utilities.packages.models;
+package com.magento2utilities.packages.models.StaticsRecompilation;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;

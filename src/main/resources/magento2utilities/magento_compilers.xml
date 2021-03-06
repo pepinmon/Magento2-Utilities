@@ -1,4 +1,4 @@
-<!-- Definition for files recompilers. Usage in com.magento2utilities.packages.models.FileRecompiler -->
+<!-- Definition for files recompilers. Usage in com.magento2utilities.packages.models.StaticsRecompilation.FileRecompiler -->
 <compilers>
     <compiler fileExtension="png" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />
     <compiler fileExtension="jpg" instance="com.magento2utilities.packages.compilers.BaseStaticCompiler" />

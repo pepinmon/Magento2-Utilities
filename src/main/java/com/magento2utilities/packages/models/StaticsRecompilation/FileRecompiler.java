@@ -1,4 +1,4 @@
-package com.magento2utilities.packages.models;
+package com.magento2utilities.packages.models.StaticsRecompilation;
 
 import com.intellij.notification.NotificationType;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -13,9 +13,9 @@ import com.intellij.psi.PsiFile;
 import com.intellij.psi.search.FilenameIndex;
 import com.intellij.psi.search.GlobalSearchScope;
 import com.intellij.psi.xml.XmlTag;
-import com.magento2utilities.actions.RecompileStaticFileAction;
 import com.magento2utilities.packages.MagentoDefinitions;
 import com.magento2utilities.packages.compilers.Compiler;
+import com.magento2utilities.packages.models.Notifications;
 import com.magento2utilities.util.Files;
 import java.util.*;
 import org.jetbrains.annotations.NotNull;
@@ -58,9 +58,9 @@ public class FileRecompiler {
                 }
             }
         });
-        RecompileStaticFileAction.MAGENTO2UTILITIES_NOTIFICATION_GROUP.createNotification(
+        Notifications.MAGENTO2UTILITIES_NOTIFICATION_GROUP.createNotification(
                 "Magento 2 Utilities | Recompile",
-                "Recompiled successfully",
+                "Recompiled successfully.",
                 NotificationType.INFORMATION,
                 null
         ).notify(project);

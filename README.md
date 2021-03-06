@@ -24,7 +24,8 @@ This plugin provides utilities that improve the workflow when working with Magen
     - Using the provided default keyboard shortcut <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>R</kbd> (can be customized).
     - Searching for the action in the general search pressing <kbd>⇧</kbd><kbd>⇧</kbd>.
     - In the editor tab context menu.
-  
+- Delete PHP classes interceptors by choosing 'Delete Interceptor' on the file context menu.
+
 ## Installation
 
 - Using IDE built-in plugin system:

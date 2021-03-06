@@ -3,7 +3,7 @@
     <id>com.magento2utilities</id>
     <name>Magento 2 - Utilities</name>
     <vendor url="https://github.com/pepinmon">Pepinmon</vendor>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description><![CDATA[
     This plugin provides utilities that improve the workflow when working with Magento 2 Projects in PHPStorm.
     <br> <a href="https://github.com/pepinmon/Magento2-Utilities/blob/main/README.md"> Documentation </a>.
@@ -24,6 +24,7 @@
             <action class="com.magento2utilities.actions.RecompileStaticFileAction" id="RecreateStatic" text="Recompile Currently Open File">
                 <keyboard-shortcut keymap="$default" first-keystroke="control alt R" />
             </action>
+            <action class="com.magento2utilities.actions.ManageClassInterceptor" id="ManageInterceptor" text="Delete Class Interceptor" />
             <add-to-group group-id="ProjectViewPopupMenu"/>
             <add-to-group group-id="EditorTabPopupMenu" anchor="last"/>
         </group>
