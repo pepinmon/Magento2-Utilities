@@ -29,7 +29,7 @@ public class CssCompiler extends BaseStaticCompiler {
         if (ArrayUtils.contains(MagentoDefinitions.cssStyleFileNames, file.getVirtualFile().getName())) {
 
             String filePath = Files.getRealPath(project, file.getVirtualFile().getPath());
-            boolean condition = Files.isFileFromPubStatic(filePath);
+            boolean condition = Files.isFileFromPubStatic(filePath) || Files.isFileFromVarViewPreProcessed(filePath);
             String fileArea = this.getFileArea(Files.getRealPath(project, originalFile.getPath()));
             if (fileArea != null) {
                 condition = condition && filePath.contains(fileArea);
