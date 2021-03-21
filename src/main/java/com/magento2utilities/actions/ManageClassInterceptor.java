@@ -1,6 +1,5 @@
 package com.magento2utilities.actions;
 
-import com.intellij.icons.AllIcons;
 import com.intellij.notification.NotificationType;
 import com.intellij.openapi.actionSystem.*;
 import com.intellij.openapi.editor.Document;
@@ -75,6 +74,14 @@ public class ManageClassInterceptor extends AnAction {
         super.update(e);
         Project project = e.getProject();
         if (project == null) {
+            return;
+        }
+        if (e.getPlace().equals(ActionPlaces.MAIN_MENU)) {
+            e.getPresentation().setVisible(false);
+            return;
+        }
+        if (e.getPlace().equals(ActionPlaces.POPUP + "@" + ActionPlaces.MAIN_TOOLBAR)) {
+            e.getPresentation().setVisible(false);
             return;
         }
         if (e.getPlace().equals(ActionPlaces.PROJECT_VIEW_POPUP)) {

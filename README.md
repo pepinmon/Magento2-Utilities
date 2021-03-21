@@ -25,6 +25,7 @@ This plugin provides utilities that improve the workflow when working with Magen
     - Searching for the action in the general search pressing <kbd>⇧</kbd><kbd>⇧</kbd>.
     - In the editor tab context menu.
 - Delete PHP classes interceptors by choosing 'Delete Interceptor' on the file context menu.
+- Run Magento CLI commands trough the IDE toolbar options.
 
 ## Installation
 

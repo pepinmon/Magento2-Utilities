@@ -82,6 +82,15 @@ public class RecompileStaticFileAction extends AnAction {
             return;
         }
 
+        if (e.getPlace().equals(ActionPlaces.MAIN_MENU)) {
+            e.getPresentation().setVisible(false);
+            return;
+        }
+        if (e.getPlace().equals(ActionPlaces.POPUP + "@" + ActionPlaces.MAIN_TOOLBAR)) {
+            e.getPresentation().setVisible(false);
+            return;
+        }
+
         if (e.getPlace().equals(ActionPlaces.PROJECT_VIEW_POPUP)) {
             e.getPresentation().setIcon(AllIcons.Actions.Refresh);
 

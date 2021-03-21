@@ -3,7 +3,7 @@
     <id>com.magento2utilities</id>
     <name>Magento 2 - Utilities</name>
     <vendor url="https://github.com/pepinmon">Pepinmon</vendor>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <description><![CDATA[
     This plugin provides utilities that improve the workflow when working with Magento 2 Projects in PHPStorm.
     <br> <a href="https://github.com/pepinmon/Magento2-Utilities/blob/main/README.md"> Documentation </a>.
@@ -27,6 +27,19 @@
             <action class="com.magento2utilities.actions.ManageClassInterceptor" id="ManageInterceptor" text="Delete Class Interceptor" />
             <add-to-group group-id="ProjectViewPopupMenu"/>
             <add-to-group group-id="EditorTabPopupMenu" anchor="last"/>
+            <add-to-group group-id="ToolsBasicGroup"    anchor="last"/>
+            <add-to-group group-id="ToolbarFindGroup"   anchor="last"/>
+
+            <group class="com.intellij.openapi.actionSystem.DefaultActionGroup" id="MagentoUtilitiesCommandsSubGroup" text="Run Magento Command" popup="true">
+                <action class="com.magento2utilities.actions.commands.FlushCache"     id="FlushCacheCommand"     text="Flush Cache" />
+                <action class="com.magento2utilities.actions.commands.SetupUpgrade"   id="SetupUpgradeCommand"   text="Run Setup Upgrade" />
+                <action class="com.magento2utilities.actions.commands.DiCompile"      id="DiCompileCommand"      text="Run DI Compile" />
+                <action class="com.magento2utilities.actions.commands.ReindexSystem"  id="ReindexSystemCommand"  text="Reindex System" />
+                <action class="com.magento2utilities.actions.commands.ResetIndexers"  id="ResetIndexersCommand"  text="Reset Indexers" />
+                <action class="com.magento2utilities.actions.commands.DeveloperMode"  id="DeveloperModeCommand"  text="Enable Developer Mode" />
+                <action class="com.magento2utilities.actions.commands.ProductionMode" id="ProductionModeCommand" text="Enable Production Mode" />
+            </group>
+
         </group>
     </actions>
 

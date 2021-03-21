@@ -1,0 +1,10 @@
+<!-- Definition for CLI commands. Usage in com.magento2utilities.packages.models.Commands.TerminalExecution -->
+<commands>
+    <command id="cache_flush"     execution="cache:flush"                title="Flush Cache"/>
+    <command id="setup_upgrade"   execution="setup:upgrade"              title="Setup Upgrade"/>
+    <command id="developer_mode"  execution="deploy:mode:set developer"  title="Enable Developer Mode"/>
+    <command id="production_mode" execution="deploy:mode:set production" title="Enable Production Mode"/>
+    <command id="reindex_full"    execution="indexer:reindex"            title="Reindex System"/>
+    <command id="reindex_reset"   execution="indexer:reset"              title="Reset Indexers"/>
+    <command id="di_compile"      execution="di:compile"                 title="DI Compile"/>
+</commands>
