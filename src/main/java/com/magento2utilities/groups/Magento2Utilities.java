@@ -32,7 +32,11 @@ public class Magento2Utilities extends DefaultActionGroup {
         /*
          * By default, the utilities group visibility depends on if the project is Magento based.
          */
-        if (!MagentoInstallation.isInstalled(Objects.requireNonNull(e.getProject()).getBasePath())) {
+        if (e.getProject() == null) {
+            e.getPresentation().setVisible(false);
+            return;
+        }
+        if (!MagentoInstallation.isInstalled(e.getProject().getBasePath())) {
             e.getPresentation().setVisible(false);
             return;
         }
