@@ -45,13 +45,13 @@ public class Magento2Utilities extends DefaultActionGroup {
          * The utilities group visibility also depends on if there are any children binded to it.
          * This is declared in plugin.xml.
          */
-        boolean isVisible = !ActionGroupUtil.isGroupEmpty(this, e, LaterInvocator.isInModalContext());
+        boolean isVisible = true;
 
         /*
          * The group can only be visible on folders and files context menus.
          */
         if (e.getPlace().equals(ActionPlaces.PROJECT_VIEW_POPUP)) {
-            isVisible = isVisible && (isDirectoryOrFile(e) || isMultipleSelection(e));
+            isVisible = (isDirectoryOrFile(e) || isMultipleSelection(e));
         }
 
         e.getPresentation().setVisible(isVisible);
